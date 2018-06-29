@@ -15,6 +15,7 @@
 		71A9AE2820E622F30076C01F /* LZPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71A9AE2620E622F30076C01F /* LZPickerView.xib */; };
 		71A9AE2A20E6251D0076C01F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71A9AE2920E6251D0076C01F /* LaunchScreen.storyboard */; };
 		71A9AE2E20E626700076C01F /* colorful.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 71A9AE2D20E626700076C01F /* colorful.jpg */; };
+		71A9AE3120E63E590076C01F /* preview.gif in Resources */ = {isa = PBXBuildFile; fileRef = 71A9AE3020E63E590076C01F /* preview.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		71A9AE2620E622F30076C01F /* LZPickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LZPickerView.xib; sourceTree = "<group>"; };
 		71A9AE2920E6251D0076C01F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71A9AE2D20E626700076C01F /* colorful.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = colorful.jpg; sourceTree = "<group>"; };
+		71A9AE3020E63E590076C01F /* preview.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = preview.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			isa = PBXGroup;
 			children = (
 				71A9AE0C20E622760076C01F /* LZPickerViewDemo */,
+				71A9AE2F20E63E590076C01F /* GIFs */,
 				71A9AE0B20E622760076C01F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,6 +88,14 @@
 				71A9AE2620E622F30076C01F /* LZPickerView.xib */,
 			);
 			path = LZPickerView;
+			sourceTree = "<group>";
+		};
+		71A9AE2F20E63E590076C01F /* GIFs */ = {
+			isa = PBXGroup;
+			children = (
+				71A9AE3020E63E590076C01F /* preview.gif */,
+			);
+			path = GIFs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				71A9AE2E20E626700076C01F /* colorful.jpg in Resources */,
+				71A9AE3120E63E590076C01F /* preview.gif in Resources */,
 				71A9AE2A20E6251D0076C01F /* LaunchScreen.storyboard in Resources */,
 				71A9AE2820E622F30076C01F /* LZPickerView.xib in Resources */,
 				71A9AE1720E622770076C01F /* Assets.xcassets in Resources */,
