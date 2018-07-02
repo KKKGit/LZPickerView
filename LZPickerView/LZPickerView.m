@@ -25,6 +25,8 @@ typedef NS_ENUM(NSUInteger, LZPickerViewType) {
 @property (copy, nonatomic) NSString *dateFormat;
 @property (assign, nonatomic) LZPickerViewType pickerType;
 
+@property (assign, nonatomic) BOOL showCompleted;
+
 @property (weak, nonatomic) IBOutlet UIView *blackView;
 @property (weak, nonatomic) IBOutlet UIVisualEffectView *baseView;
 
@@ -102,6 +104,7 @@ typedef NS_ENUM(NSUInteger, LZPickerViewType) {
 
 - (void)show{
     
+    self.showCompleted = NO;
     [self.superView addSubview:self];
     self.frame = self.superView.bounds;
     
@@ -109,11 +112,14 @@ typedef NS_ENUM(NSUInteger, LZPickerViewType) {
     [UIView animateWithDuration:0.25 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         self.blackView.alpha = 0.5f;
         [self layoutIfNeeded];
-    } completion:nil];
+    } completion:^(BOOL finished) {
+        self.showCompleted = YES;
+    }];
 }
 
 - (void)hide{
     
+    if (!self.showCompleted) return;
     self.viewBottom.constant = 0;
     [UIView animateWithDuration:0.25 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         self.blackView.alpha = 0.0f;

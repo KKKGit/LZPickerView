@@ -49,6 +49,7 @@
 		71A9AE0120E622760076C01F = {
 			isa = PBXGroup;
 			children = (
+				71A9AE2320E622F30076C01F /* LZPickerView */,
 				71A9AE0C20E622760076C01F /* LZPickerViewDemo */,
 				71A9AE2F20E63E590076C01F /* GIFs */,
 				71A9AE0B20E622760076C01F /* Products */,
@@ -71,7 +72,6 @@
 				71A9AE1020E622760076C01F /* ViewController.h */,
 				71A9AE1120E622760076C01F /* ViewController.m */,
 				71A9AE2D20E626700076C01F /* colorful.jpg */,
-				71A9AE2320E622F30076C01F /* LZPickerView */,
 				71A9AE1620E622770076C01F /* Assets.xcassets */,
 				71A9AE2920E6251D0076C01F /* LaunchScreen.storyboard */,
 				71A9AE1B20E622770076C01F /* Info.plist */,
