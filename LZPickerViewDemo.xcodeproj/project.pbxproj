@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7168C80720EA0D3000B94329 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 7168C80620EA0D3000B94329 /* LICENSE */; };
+		7168C80920EA0D3600B94329 /* LZPickerView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 7168C80820EA0D3600B94329 /* LZPickerView.podspec */; };
 		71A9AE0F20E622760076C01F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A9AE0E20E622760076C01F /* AppDelegate.m */; };
 		71A9AE1220E622760076C01F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A9AE1120E622760076C01F /* ViewController.m */; };
 		71A9AE1720E622770076C01F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71A9AE1620E622770076C01F /* Assets.xcassets */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7168C80620EA0D3000B94329 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		7168C80820EA0D3600B94329 /* LZPickerView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LZPickerView.podspec; sourceTree = "<group>"; };
 		71A9AE0A20E622760076C01F /* LZPickerViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LZPickerViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71A9AE0D20E622760076C01F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		71A9AE0E20E622760076C01F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -52,6 +56,8 @@
 				71A9AE2320E622F30076C01F /* LZPickerView */,
 				71A9AE0C20E622760076C01F /* LZPickerViewDemo */,
 				71A9AE2F20E63E590076C01F /* GIFs */,
+				7168C80820EA0D3600B94329 /* LZPickerView.podspec */,
+				7168C80620EA0D3000B94329 /* LICENSE */,
 				71A9AE0B20E622760076C01F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -155,7 +161,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7168C80720EA0D3000B94329 /* LICENSE in Resources */,
 				71A9AE2E20E626700076C01F /* colorful.jpg in Resources */,
+				7168C80920EA0D3600B94329 /* LZPickerView.podspec in Resources */,
 				71A9AE3120E63E590076C01F /* preview.gif in Resources */,
 				71A9AE2A20E6251D0076C01F /* LaunchScreen.storyboard in Resources */,
 				71A9AE2820E622F30076C01F /* LZPickerView.xib in Resources */,
