@@ -85,6 +85,7 @@ typedef NS_ENUM(NSUInteger, LZPickerViewType) {
 - (void)showInView:(UIView *)view pickCompletion:(void (^)(NSString *string))completion{
     self.superView = view;
     self.handler = completion;
+    [self addToSuperView];
     [self show];
 }
 
@@ -102,12 +103,44 @@ typedef NS_ENUM(NSUInteger, LZPickerViewType) {
     [self.cancelButton setBackgroundImage:[self creatImageWithColor:l_RGBA(245, 245, 245, 0.80)] forState:UIControlStateHighlighted];
 }
 
+- (void)addToSuperView{
+    self.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.superView addSubview:self];
+    [self.superView addConstraints:@[[NSLayoutConstraint constraintWithItem:self.superView
+                                                                  attribute:NSLayoutAttributeLeft
+                                                                  relatedBy:NSLayoutRelationEqual
+                                                                     toItem:self
+                                                                  attribute:NSLayoutAttributeLeft
+                                                                 multiplier:1
+                                                                   constant:0],
+                                     [NSLayoutConstraint constraintWithItem:self.superView
+                                                                  attribute:NSLayoutAttributeRight
+                                                                  relatedBy:NSLayoutRelationEqual
+                                                                     toItem:self
+                                                                  attribute:NSLayoutAttributeRight
+                                                                 multiplier:1
+                                                                   constant:0],
+                                     [NSLayoutConstraint constraintWithItem:self.superView
+                                                                  attribute:NSLayoutAttributeTop
+                                                                  relatedBy:NSLayoutRelationEqual
+                                                                     toItem:self
+                                                                  attribute:NSLayoutAttributeTop
+                                                                 multiplier:1
+                                                                   constant:0],
+                                     [NSLayoutConstraint constraintWithItem:self.superView
+                                                                  attribute:NSLayoutAttributeBottom
+                                                                  relatedBy:NSLayoutRelationEqual
+                                                                     toItem:self
+                                                                  attribute:NSLayoutAttributeBottom
+                                                                 multiplier:1
+                                                                   constant:0]
+                                     ]];
+    [self layoutIfNeeded];
+}
+
 - (void)show{
     
     self.showCompleted = NO;
-    [self.superView addSubview:self];
-    self.frame = self.superView.bounds;
-    
     self.viewBottom.constant = l_BaseViewHeight;
     [UIView animateWithDuration:0.25 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         self.blackView.alpha = 0.5f;
