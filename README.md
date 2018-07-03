@@ -14,18 +14,18 @@ pod 'LZPickerView', '~> 0.1.2'
 
 # Usage
 
-## Import:
+### Import:
 ```
 #import "LZPickerView.h"
 ```
-## Create picker and show:
+### Create picker and show:
 ```
 LZPickerView *pickerView = [[LZPickerView alloc] initWithItems:@[@"item_1",@"item_2",@"item_3"]];
 [pickerView showInView:self.view pickCompletion:^(NSString * _Nonnull string) {
     
 }];
 ```
-## Or
+### Or
 ```
 LZPickerView *pickerView = [[LZPickerView alloc] initWithDatePickerMode:UIDatePickerModeDateAndTime];
 [pickerView showInView:self.view pickCompletion:^(NSString * _Nonnull string) {
