@@ -34,7 +34,7 @@
 
 - (void)btnClick:(UIButton *)btn{
     
-    LZPickerView *pickerView = [[LZPickerView alloc] initWithItems:@[@"选项一",@"选项二",@"选项三"]];
+    LZPickerView *pickerView = [[LZPickerView alloc] initWithItems:@[@"item1",@"item2",@"item3"]];
     
 //    LZPickerView *pickerView = [[LZPickerView alloc] initWithDatePickerMode:UIDatePickerModeDateAndTime];
     [pickerView showInView:self.view pickCompletion:^(NSString * _Nonnull string) {
