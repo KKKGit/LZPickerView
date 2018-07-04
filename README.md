@@ -9,7 +9,7 @@ A simple picker like WeChat.
 LZPickerView is available on CocoaPods. Just add the following to your project Podfile:
 ```
 platform :ios, '8.0'
-pod 'LZPickerView', '~> 0.1.2'
+pod 'LZPickerView', '~> 0.1.3.4'
 ```
 
 # Usage
