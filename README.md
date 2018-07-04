@@ -2,7 +2,7 @@
 
 A simple picker like WeChat.
 
-<img width="190" height="409" src="https://raw.githubusercontent.com/KKKGit/LZPickerViewDemo/master/GIFs/preview.gif">
+<img width="190" height="409" src="https://raw.githubusercontent.com/KKKGit/LZPickerView/master/GIFs/preview.gif">
 
 # Installation
 
