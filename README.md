@@ -33,6 +33,7 @@ LZPickerView *pickerView = [[LZPickerView alloc] initWithDatePickerMode:UIDatePi
 }];
 ```
 ### Language support:
+```
 中文简体
 中文繁體
 English
@@ -47,3 +48,4 @@ Español
 Tiếng Việt
 ภาษาไทย
 العربية
+```
