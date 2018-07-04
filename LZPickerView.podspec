@@ -14,7 +14,8 @@ Pod::Spec.new do |s|
   s.platform      = :ios, "8.0"
   s.source        = { :git => "https://github.com/KKKGit/LZPickerView.git", :tag => "#{s.version}" }
   s.source_files  = "Classes", "LZPickerView/LZPickerView.{h,m}"
-  s.resources     = "LZPickerView/LZPickerView.{xib,strings}"
+  s.resources     = "LZPickerView/*.lproj"
+
   s.framework     = "UIKit"
   s.requires_arc  = true
 
