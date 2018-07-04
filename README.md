@@ -25,10 +25,27 @@ LZPickerView *pickerView = [[LZPickerView alloc] initWithItems:@[@"item_1",@"ite
     
 }];
 ```
-### Or
+### Or:
 ```
 LZPickerView *pickerView = [[LZPickerView alloc] initWithDatePickerMode:UIDatePickerModeDateAndTime];
 [pickerView showInView:self.view pickCompletion:^(NSString * _Nonnull string) {
     
 }];
+```
+### Language support:
+```
+中文简体
+中文繁體
+English
+Français
+Deutsch
+한국어
+日本語
+Русский
+Italiano
+Português
+Español
+Tiếng Việt
+ภาษาไทย
+العربية
 ```
