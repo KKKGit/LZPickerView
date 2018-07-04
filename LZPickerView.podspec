@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name          = "LZPickerView"
-  s.version       = "0.1.3"
+  s.version       = "0.1.3.2"
   s.summary       = "LZPickerView"
   s.description   = <<-DESC
                     Easy to use a PickerView like WeChat.
